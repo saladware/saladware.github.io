@@ -1,0 +1,42 @@
+@font-face {
+  font-family: 'custom-icons-font';
+  src:  url('../fonts/custom-icons-font.eot?t8tiir');
+  src:  url('../fonts/custom-icons-font.eot?t8tiir#iefix') format('embedded-opentype'),
+    url('../fonts/custom-icons-font.ttf?t8tiir') format('truetype'),
+    url('../fonts/custom-icons-font.woff?t8tiir') format('woff'),
+    url('../fonts/custom-icons-font.svg?t8tiir#custom-icons-font') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^="icon-"]::before, [class*=" icon-"]::before {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'custom-icons-font' !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-calendar-regular:before {
+  content: "\e903";
+}
+.icon-clock-regular:before {
+  content: "\e904";
+}
+.icon-level1:before {
+  content: "\e900";
+}
+.icon-level2:before {
+  content: "\e901";
+}
+.icon-level3:before {
+  content: "\e902";
+}

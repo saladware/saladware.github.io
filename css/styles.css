@@ -1,0 +1,337 @@
+* {
+    font-family: sans-serif;
+}
+
+::-webkit-scrollbar {
+    height: 5px;
+    width: 5px;
+  }
+  
+  ::-webkit-scrollbar-track {
+    background: rgba(150, 150, 150, 0.1)
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background: rgba(150, 150, 150, 0.8)
+  }
+
+html {
+    scroll-padding-top: 5rem;
+    scroll-behavior: smooth;
+    --primary: rgb(255, 70, 140);
+    --secondary: rgb(255, 105, 164);
+}
+
+span.primary {
+    color: var(--primary);
+}
+
+button {
+    cursor: pointer;
+    padding: 0.5rem;
+    background-color: inherit;
+    color: #dfdfdf;
+    font-weight: 500;
+    border: 0px white solid;
+    border-radius: 0.8rem;
+    border: 2px solid #dfdfdf;
+}
+
+button.primary {
+    background-color: var(--primary);
+    border: solid var(--primary) 2px;
+    color: white;
+    font-weight: 600;
+    padding: calc(0.8rem - 2px) calc(2rem - 2px);
+    transition: background 0.5s;
+}
+
+button.primary:hover {
+    background: white;
+    color: var(--primary)
+}
+
+
+button.secondary {
+    background-color: inherit;
+    border: solid black 2px;
+    color: black;
+    font-weight: 500;
+    padding: calc(0.8rem - 2px) calc(2rem - 2px);
+    transition: background 0.5s;
+}
+
+button.secondary:hover {
+    background-color: black;
+    color: white
+}
+
+.container {
+    padding: 0 1rem;
+}
+
+@media (min-width: 575.98px) {
+    .container {
+        max-width: 540px;
+        margin: auto;
+        padding: 0;
+    }
+}
+
+@media (min-width: 767.98px) {
+    .container {
+        max-width: 720px;
+    }
+}
+
+@media (min-width: 991.98px) {
+    .container {
+        max-width: 960px;
+    }
+}
+
+@media (min-width: 1199.98px) {
+    .container {
+        max-width: 1140px;
+    }
+}
+
+header {
+    background-color: rgba(0, 0, 0, 0.9);
+    padding: 0.5rem 0;
+    top: 0;
+    z-index: 1;
+
+}
+
+header img {
+    height: 100%;
+}
+
+header nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 3rem;
+}
+
+header nav ul {
+    margin: 0;
+    padding: 0;
+    display: none;
+    list-style-type: none;
+}
+
+@media (min-width: 991.98px) {
+    header nav ul {
+        display: flex;
+
+    }
+
+    header {
+        position: sticky;
+    }
+}
+
+/* хедер */
+
+header nav ul li {
+    margin: 0 1rem;
+}
+
+
+header nav ul li a {
+    text-decoration: none;
+    color: #dfdfdf;
+    border-radius: 0.7rem;
+    transition: background-color 0.5s ease-out;
+    padding: 0.5rem 0.8rem;
+
+}
+
+header nav ul li.active a {
+    color: white;
+    font-weight: bolder;
+
+}
+
+header nav ul li::after {
+    content: "";
+    position: relative;
+    display: block;
+    bottom: -1rem;
+    left: 0;
+    right: 0;
+    height: 3px;
+    background-color: var(--primary);
+    width: 0;
+}
+
+header nav ul li.active::after {
+    width: 100%;
+    transition: 0.5s ease-in-out 0.2s;
+}
+
+
+
+header nav ul li a:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+section {
+    margin: 2vh 0;
+}
+
+/* секция 0 */
+
+#general img {
+    width: 50vw;
+    max-width: 400px;
+    min-width: 300px;
+    display: block;
+    margin: auto;
+}
+
+
+@media (min-width: 767.98px) {
+    #general .container {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: row-reverse;
+        align-items: center;
+    }
+
+    #general img {
+        margin: 0
+    }
+}
+
+
+
+
+#general button.primary {
+    margin-right: 0.5rem
+}
+
+.tag {
+    display: inline-block;
+    padding: 0.1rem 0.5rem;
+    border: 1px solid;
+    border-radius: 1rem;
+    margin: 0.2rem 0.1rem;
+    font-size: 0.8rem;
+    font-weight: bold;
+}
+
+.tags {
+    display: inline-block;
+}
+
+#tag1 {
+    color: rgb(0, 100, 100);
+    border-color: rgb(0, 100, 100);
+    background-color: rgba(0, 200, 200, 0.1);
+}
+
+#tag2 {
+    color: rgb(100, 100, 0);
+    color: rgb(100, 100, 0);
+    background-color: rgba(200, 200, 0, 0.1);
+}
+
+#tag3 {
+    color: rgb(100, 0, 0);
+    border-color: rgb(100, 0, 0);
+    background-color: rgba(200, 0, 0, 0.1);
+}
+
+#tag4 {
+    color: rgb(0, 100, 0);
+    border-color: rgb(0, 100, 0);
+    background-color: rgba(0, 200, 0, 0.1);
+
+}
+
+#tag5 {
+    color: rgb(100, 0, 100);
+    border-color: rgb(100, 0, 100);
+    background-color: rgba(200, 0, 200, 0.1);
+}
+
+
+
+#general .wrapper {
+    margin: auto 0;
+    margin-right: 2rem;
+
+}
+
+#general .buttons {
+    margin-top: 1rem;
+}
+
+footer {
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+/* секция 1 */
+
+#courses .courses {
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    -o-user-select: none;
+    user-select: none;
+    display: flex;
+    overflow-x: auto;
+    flex-wrap: nowrap;
+    margin-bottom: 4rem;
+
+}
+
+#courses .course {
+    width: 250px;
+    min-width: 250px;
+    -webkit-box-shadow: 0px 5px 10px 2px rgba(67, 44, 60, 0.2);
+    -moz-box-shadow: 0px 5px 10px 2px rgba(67, 44, 60, 0.2);
+    box-shadow: 0px 5px 10px 2px rgba(67, 44, 60, 0.2);
+    padding: 1rem;
+    margin: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border-radius: 1rem;
+}
+
+#courses .course .description {
+    font-size: 0.9rem;
+    color: rgb(50, 50, 50)
+}
+
+#courses .course .cover {
+    width: 100%;
+}
+
+#courses .course button {
+    margin: 0 auto;
+    display: block;
+}
+
+#courses .course ul {
+    padding: 0;
+    margin: 0;
+    margin-bottom: 1rem;
+    list-style-type: none;
+}
+
+#courses .course ul li {
+    margin: 0.5rem;
+    color: rgb(50, 50, 50);
+    font-weight: bolder;
+}
+
+#courses .course ul li::before {
+    color: var(--primary)
+}
