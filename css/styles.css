@@ -363,10 +363,17 @@ footer {
 
 #advantages .features {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr;
     
 }
 
+
+@media (min-width: 575.98px) {
+    #advantages .features {
+        grid-template-columns: 1fr 1fr;
+        
+    }
+}
 
 @media (min-width: 767.98px) {
     #advantages .features {
@@ -374,6 +381,7 @@ footer {
         
     }
 }
+
 
 
 
