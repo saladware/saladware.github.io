@@ -1,10 +1,10 @@
 @font-face {
   font-family: 'custom-icons-font';
-  src:  url('../fonts/custom-icons-font.eot?t8tiir');
-  src:  url('../fonts/custom-icons-font.eot?t8tiir#iefix') format('embedded-opentype'),
-    url('../fonts/custom-icons-font.ttf?t8tiir') format('truetype'),
-    url('../fonts/custom-icons-font.woff?t8tiir') format('woff'),
-    url('../fonts/custom-icons-font.svg?t8tiir#custom-icons-font') format('svg');
+  src:  url('../fonts/custom-icons-font.eot?xnq1cw');
+  src:  url('../fonts/custom-icons-font.eot?xnq1cw#iefix') format('embedded-opentype'),
+    url('../fonts/custom-icons-font.ttf?xnq1cw') format('truetype'),
+    url('../fonts/custom-icons-font.woff?xnq1cw') format('woff'),
+    url('../fonts/custom-icons-font.svg?xnq1cw#custom-icons-font') format('svg');
   font-weight: normal;
   font-style: normal;
   font-display: block;
@@ -25,6 +25,21 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+.icon-handshake-simple-solid:before {
+  content: "\e905";
+}
+.icon-gears-solid:before {
+  content: "\e906";
+}
+.icon-chalkboard-user-solid:before {
+  content: "\e907";
+}
+.icon-suitcase-solid:before {
+  content: "\e908";
+}
+.icon-list-check-solid:before {
+  content: "\e909";
+}
 .icon-calendar-regular:before {
   content: "\e903";
 }

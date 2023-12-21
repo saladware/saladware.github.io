@@ -96,6 +96,16 @@ button.secondary:hover {
     }
 }
 
+.card {
+    -webkit-box-shadow: 0px 5px 10px 2px rgba(67, 44, 60, 0.2);
+    -moz-box-shadow: 0px 5px 10px 2px rgba(67, 44, 60, 0.2);
+    box-shadow: 0px 5px 10px 2px rgba(67, 44, 60, 0.2);
+    padding: 1rem;
+    border-radius: 1rem;
+    margin: 1rem;
+}
+
+
 header {
     background-color: rgba(0, 0, 0, 0.9);
     padding: 0.5rem 0;
@@ -277,6 +287,10 @@ footer {
 
 /* секция 1 */
 
+#courses h1, #advantages h1 {
+    text-align: center;
+}
+
 #courses .courses {
     -webkit-user-select: none;
     -khtml-user-select: none;
@@ -294,19 +308,12 @@ footer {
 
 
 
-
 #courses .course {
     width: 250px;
     min-width: 250px;
-    -webkit-box-shadow: 0px 5px 10px 2px rgba(67, 44, 60, 0.2);
-    -moz-box-shadow: 0px 5px 10px 2px rgba(67, 44, 60, 0.2);
-    box-shadow: 0px 5px 10px 2px rgba(67, 44, 60, 0.2);
-    padding: 1rem;
-    margin: 1rem;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    border-radius: 1rem;
     scroll-snap-align: center;
 }
 
@@ -350,4 +357,56 @@ footer {
 
 #courses .course ul li::before {
     color: var(--primary)
+}
+
+/* section 2 */
+
+#advantages .features {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    
+}
+
+
+@media (min-width: 767.98px) {
+    #advantages .features {
+        grid-template-columns: 1fr 1fr 1fr;
+        
+    }
+}
+
+
+
+#advantages .shape {
+    background-color: var(--primary);
+    color: white;
+    width: fit-content;
+    margin: 0 auto;
+    font-size: 2rem;
+    padding: 1rem;
+}
+
+
+#shape1 {
+    border-radius: 71% 29% 24% 76% / 62% 34% 66% 38%;
+}
+
+#shape2 {
+    border-radius: 44% 56% 61% 39% / 39% 59% 41% 61%;
+}
+
+#shape3 {
+    border-radius: 18% 82% 41% 59% / 62% 28% 72% 38% ;
+}
+
+#shape4 {
+    border-radius: 35% 65% 75% 25% / 38% 22% 78% 62% ;
+}
+
+#shape5 {
+    border-radius: 100% 0% 100% 0% / 44% 30% 70% 56% ;
+}
+
+#shape6 {
+    border-radius: 39% 61% 59% 41% / 70% 70% 30% 30%;
 }
