@@ -281,6 +281,7 @@ footer {
     -webkit-user-select: none;
     -khtml-user-select: none;
     -moz-user-select: none;
+    scroll-snap-type: x mandatory;
     -ms-user-select: none;
     -o-user-select: none;
     user-select: none;
@@ -290,6 +291,9 @@ footer {
     margin-bottom: 4rem;
 
 }
+
+
+
 
 #courses .course {
     width: 250px;
@@ -303,7 +307,19 @@ footer {
     flex-direction: column;
     justify-content: space-between;
     border-radius: 1rem;
+    scroll-snap-align: center;
 }
+
+@media (min-width: 767.98px) {
+    #courses .course {
+        scroll-snap-align: initial;
+    }
+
+    #courses .courses {
+        scroll-snap-type: x mandatory;
+    }
+}
+
 
 #courses .course .description {
     font-size: 0.9rem;
